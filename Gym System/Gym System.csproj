@@ -90,6 +90,9 @@
     <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Person Classes\user of sytem\Administrator.cs" />
+    <Compile Include="Person Classes\user of sytem\Employee.cs" />
+    <Compile Include="Person Classes\user of sytem\gymEmployee.cs" />
     <Compile Include="Person Classes\Member.cs" />
     <Compile Include="Person Classes\Person.cs" />
     <Compile Include="Person Classes\Trainer.cs" />
@@ -147,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\loginImage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gym_System.Person_Classes.Gym_Employees
+namespace Gym_System.GYM_classes
 {
-    internal class gymEmployee
+    internal class Sessions
     {
     }
 }

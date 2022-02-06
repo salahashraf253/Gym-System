@@ -64,7 +64,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(570, 180);
+            this.label2.Location = new System.Drawing.Point(589, 160);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 25);
@@ -86,7 +86,7 @@
             // emailTxtBox
             // 
             this.emailTxtBox.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTxtBox.Location = new System.Drawing.Point(553, 117);
+            this.emailTxtBox.Location = new System.Drawing.Point(564, 104);
             this.emailTxtBox.Margin = new System.Windows.Forms.Padding(2);
             this.emailTxtBox.Name = "emailTxtBox";
             this.emailTxtBox.Size = new System.Drawing.Size(134, 32);

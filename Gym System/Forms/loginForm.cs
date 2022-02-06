@@ -45,7 +45,7 @@ namespace Gym_System.Forms
 
         private static Boolean validLogin(string email,string password)
         {
-            return false;
+            return email=="salah";
         }
 
     }
