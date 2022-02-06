@@ -17,7 +17,7 @@ namespace Gym_System.Person_Classes
         protected float weight;
         public Person(int id,string firstName,string lastName,string email,string password,string type, float weight)
         {
-            this.id = id;
+            //this.id = id;
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
@@ -35,7 +35,7 @@ namespace Gym_System.Person_Classes
         {
             this.id = id;
         }
-       
+
         //first name
         public string getFirstName() 
         { 

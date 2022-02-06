@@ -8,6 +8,7 @@ namespace Gym_System.Person_Classes
 {
     internal class Trainer : Person
     {
+        
         public  Trainer(int id, string firstName, string lastName, string email, string password, string type, float weight) : base
             (id, firstName, lastName, email, password,type,weight)
         {
