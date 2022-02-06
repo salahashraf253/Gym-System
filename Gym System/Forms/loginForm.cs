@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MySql.Data;
+using MySql.Data.MySqlClient;
 namespace Gym_System.Forms
 {
     public partial class loginForm : Form
@@ -45,7 +46,27 @@ namespace Gym_System.Forms
 
         private static Boolean validLogin(string email,string password)
         {
-            return email=="salah";
+            try
+            {
+                string strConnect = "Server = localhost; port = 3306;database=gym_data_base username = root ; password=1234";
+                MySqlConnection connection = new MySqlConnection(strConnect);
+                MySqlCommand cmd = connection.CreateCommand();
+                MySqlDataReader Reader;
+                cmd.CommandText = "select * from users where email='" + email + "' and password='" + password + "'";
+                connection.Open();
+                Reader = cmd.ExecuteReader();
+
+                if (Reader.HasRows.Equals(1))
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Error");
+            }
+            return false;
         }
 
     }

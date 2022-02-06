@@ -53,6 +53,8 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -90,6 +92,8 @@
     <Compile Include="Forms\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GYM classes\Sessions.cs" />
+    <Compile Include="Person Classes\membership.cs" />
     <Compile Include="Person Classes\user of sytem\Administrator.cs" />
     <Compile Include="Person Classes\user of sytem\Employee.cs" />
     <Compile Include="Person Classes\user of sytem\gymEmployee.cs" />
@@ -151,8 +155,6 @@
   <ItemGroup>
     <None Include="Images\loginImage2.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

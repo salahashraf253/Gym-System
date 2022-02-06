@@ -8,5 +8,6 @@ namespace Gym_System.GYM_classes
 {
     internal class Sessions
     {
+        string sessionName;
     }
 }
