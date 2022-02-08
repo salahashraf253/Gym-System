@@ -29,32 +29,23 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
-            this.button1.Location = new System.Drawing.Point(1030, 662);
+            this.button1.Location = new System.Drawing.Point(1003, 659);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 69);
+            this.button1.Size = new System.Drawing.Size(198, 84);
             this.button1.TabIndex = 3;
-            this.button1.Text = "start";
+            this.button1.Text = "Let\'s Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Gym_System.Properties.Resources.mainPhoto3;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1000, 749);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -66,6 +57,15 @@
             this.label2.Size = new System.Drawing.Size(628, 37);
             this.label2.TabIndex = 6;
             this.label2.Text = "Welcome to our GYM Management System";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Gym_System.Properties.Resources.mainPhoto3;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1000, 749);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // MainPage
             // 

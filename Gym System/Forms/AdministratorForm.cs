@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Gym_System.GYM_classes;
 namespace Gym_System.Forms
 {
     public partial class AdministratorForm : Form
@@ -21,6 +21,12 @@ namespace Gym_System.Forms
         {
             addTrainerForm addTrainerForm = new addTrainerForm();
             addTrainerForm.Show();
+        }
+
+        private void viewAllMemberInfo_Click(object sender, EventArgs e)
+        {
+            DataBaseFunctions dbf = new DataBaseFunctions();
+            dataGridView1.DataSource = dbf.viewMembersUnderCondition(" ");
         }
     }
 }

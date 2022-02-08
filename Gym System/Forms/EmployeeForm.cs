@@ -29,7 +29,7 @@ namespace Gym_System.Forms
         {
             DataBase db = new DataBase();
             DataBaseFunctions dbf = new DataBaseFunctions();
-            dataGridView1.DataSource = dbf.viewMembersUnderCondition("and firstName='Samaa'");
+            dataGridView1.DataSource = dbf.viewMembersUnderCondition(" ");
         }
 
         private void viewMembersWithClass_Click(object sender, EventArgs e)

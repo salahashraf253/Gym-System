@@ -28,26 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.sign_in_btn = new System.Windows.Forms.Button();
             this.emailTxtBox = new System.Windows.Forms.TextBox();
             this.passwordTxtBox = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Gym_System.Properties.Resources.loginImage2;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 2);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(498, 618);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(498, 618);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -79,7 +68,7 @@
             this.sign_in_btn.Location = new System.Drawing.Point(784, 404);
             this.sign_in_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sign_in_btn.Name = "sign_in_btn";
-            this.sign_in_btn.Size = new System.Drawing.Size(201, 48);
+            this.sign_in_btn.Size = new System.Drawing.Size(201, 54);
             this.sign_in_btn.TabIndex = 3;
             this.sign_in_btn.Text = "sign in";
             this.sign_in_btn.UseVisualStyleBackColor = true;
@@ -116,6 +105,17 @@
             this.checkBox1.Text = "show password";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Gym_System.Properties.Resources.loginImage2;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 2);
+            this.pictureBox1.MinimumSize = new System.Drawing.Size(498, 618);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(498, 618);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // loginForm
             // 
