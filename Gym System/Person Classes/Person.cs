@@ -13,18 +13,14 @@ namespace Gym_System.Person_Classes
         protected string firstName;
         protected string lastName;
         protected string email;
-        protected string password;
         protected string type;
-        protected float weight;
-        public Person(int id,string firstName,string lastName,string email,string password,string type, float weight)
+        public Person(int id,string firstName,string lastName,string email,string type)
         {
             this.id = id;
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
-            this.password = password;
             this.type = type;
-            this.weight = weight;
         }
 
         //id
@@ -66,16 +62,6 @@ namespace Gym_System.Person_Classes
         public void setEmail(string email)
         {
             this.email = email;
-        }
-
-        //password
-        public string getPassword() 
-        { 
-            return password; 
-        }
-        public void setPassword(string password) 
-        {
-            this.password = password; 
         }
     }
 }

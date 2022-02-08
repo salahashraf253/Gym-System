@@ -71,9 +71,9 @@ namespace Gym_System.Forms
                 db.closeConnection();
                 if (numberOfRows == 1)
                 {
-                    return type;
+                    return type;    //return the type of user administrator or employee
                 }
-                return type;
+                return type;    //return null (indcate false login)
 
             }
             catch (Exception ex)
@@ -93,5 +93,6 @@ namespace Gym_System.Forms
             emailTxtBox.Clear();
             passwordTxtBox.Clear();
         }
+
     }
 }

@@ -16,7 +16,7 @@ namespace Gym_System.Person_Classes
         }
         public memberShipType membershipType { get; set; }
         public Member(int id, string firstName, string lastName, string email, string password, string type, float weight , memberShipType membershipType) : base
-            (id, firstName, lastName, email, password,type,weight)
+            (id, firstName, lastName, email,type)
         {
             this.membershipType = membershipType;   
         }

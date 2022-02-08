@@ -16,5 +16,11 @@ namespace Gym_System.Forms
         {
             InitializeComponent();
         }
+
+        private void addTrainerBtn_Click(object sender, EventArgs e)
+        {
+            addTrainerForm addTrainerForm = new addTrainerForm();
+            addTrainerForm.Show();
+        }
     }
 }

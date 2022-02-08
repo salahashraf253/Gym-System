@@ -1,6 +1,6 @@
 ﻿namespace Gym_System.Forms
 {
-    partial class AdministratorForm
+    partial class ClassesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.addTrainerBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // addTrainerBtn
+            // dataGridView1
             // 
-            this.addTrainerBtn.Location = new System.Drawing.Point(355, 259);
-            this.addTrainerBtn.Name = "addTrainerBtn";
-            this.addTrainerBtn.Size = new System.Drawing.Size(277, 158);
-            this.addTrainerBtn.TabIndex = 0;
-            this.addTrainerBtn.Text = "Add trainer";
-            this.addTrainerBtn.UseVisualStyleBackColor = true;
-            this.addTrainerBtn.Click += new System.EventHandler(this.addTrainerBtn_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(163, 55);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(562, 393);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // AdministratorForm
+            // ClassesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(1300, 723);
-            this.Controls.Add(this.addTrainerBtn);
-            this.Name = "AdministratorForm";
-            this.Text = "AdministratorForm";
+            this.ClientSize = new System.Drawing.Size(881, 586);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "ClassesForm";
+            this.Text = "ClassesForm";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button addTrainerBtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

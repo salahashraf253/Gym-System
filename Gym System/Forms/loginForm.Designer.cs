@@ -41,20 +41,20 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Gym_System.Properties.Resources.loginImage2;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 2);
+            this.pictureBox1.MinimumSize = new System.Drawing.Size(498, 618);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(663, 729);
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.Size = new System.Drawing.Size(498, 618);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(785, 76);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(839, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 32);
             this.label1.TabIndex = 1;
@@ -64,7 +64,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(785, 197);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(816, 231);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 32);
             this.label2.TabIndex = 2;
@@ -72,11 +73,13 @@
             // 
             // sign_in_btn
             // 
-            this.sign_in_btn.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sign_in_btn.Location = new System.Drawing.Point(791, 415);
+            this.sign_in_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sign_in_btn.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sign_in_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            this.sign_in_btn.Location = new System.Drawing.Point(784, 404);
             this.sign_in_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sign_in_btn.Name = "sign_in_btn";
-            this.sign_in_btn.Size = new System.Drawing.Size(109, 100);
+            this.sign_in_btn.Size = new System.Drawing.Size(201, 48);
             this.sign_in_btn.TabIndex = 3;
             this.sign_in_btn.Text = "sign in";
             this.sign_in_btn.UseVisualStyleBackColor = true;
@@ -84,29 +87,31 @@
             // 
             // emailTxtBox
             // 
-            this.emailTxtBox.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTxtBox.Location = new System.Drawing.Point(752, 128);
+            this.emailTxtBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTxtBox.Location = new System.Drawing.Point(768, 153);
             this.emailTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.emailTxtBox.Name = "emailTxtBox";
-            this.emailTxtBox.Size = new System.Drawing.Size(177, 39);
+            this.emailTxtBox.Size = new System.Drawing.Size(217, 30);
             this.emailTxtBox.TabIndex = 4;
             // 
             // passwordTxtBox
             // 
-            this.passwordTxtBox.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTxtBox.Location = new System.Drawing.Point(752, 277);
+            this.passwordTxtBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTxtBox.Location = new System.Drawing.Point(768, 288);
             this.passwordTxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordTxtBox.Name = "passwordTxtBox";
-            this.passwordTxtBox.Size = new System.Drawing.Size(204, 39);
+            this.passwordTxtBox.Size = new System.Drawing.Size(217, 30);
             this.passwordTxtBox.TabIndex = 5;
             this.passwordTxtBox.UseSystemPasswordChar = true;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(778, 322);
+            this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
+            this.checkBox1.Location = new System.Drawing.Point(807, 332);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(122, 20);
+            this.checkBox1.Size = new System.Drawing.Size(156, 26);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "show password";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -116,17 +121,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1012, 695);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.ClientSize = new System.Drawing.Size(1086, 621);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.passwordTxtBox);
             this.Controls.Add(this.emailTxtBox);
             this.Controls.Add(this.sign_in_btn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1104, 668);
             this.Name = "loginForm";
-            this.Text = "loginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login Form";
             this.Load += new System.EventHandler(this.loginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -135,7 +144,6 @@
         }
 
         #endregion
-
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
