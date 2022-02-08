@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Gym_System.Person_Classes.Gym_Employees
 {
-    internal class Employee : gymEmployee
+    internal class Employee : User 
     {
-        public Employee(int id, string firstName, string lastName, string email, string password, string type, float weight) : base
-            (id, firstName, lastName, email, password, type, weight)
+        public Employee()
         {
 
         }

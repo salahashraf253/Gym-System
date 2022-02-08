@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Gym_System.Person_Classes.Gym_Employees
 {
-    internal class Administrator : User
+    internal abstract class User 
     {
-        public Administrator()
-        {
 
-        }
     }
 }
