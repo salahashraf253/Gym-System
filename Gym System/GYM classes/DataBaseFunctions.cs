@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
+
 namespace Gym_System.GYM_classes
 {
     internal class DataBaseFunctions
@@ -29,15 +31,18 @@ namespace Gym_System.GYM_classes
         public DataTable viewClasses() 
         {
             DataTable dt;
-            query = "select name from class";
+            query = "select distinct name from class";
             dt=db.extractData(query);
             return dt;
         }
-        public DataTable viewMembersWithSpecificClass()
+        public DataTable viewMembersWithSpecificClass(string className)
         {
-            query = "SELECT * FROM gym_data_base.person , gym_data_base.class " +
-                "where gym_data_base.person.id = gym_data_base.class.trainerId;";
+            string type = "member";
+            query = "SELECT *  from gym_data_base.class,gym_data_base.person where gym_data_base.person.type='member'" +
+                " and gym_data_base.person.id = gym_data_base.class.personID and   " +
+             "gym_data_base.class.name='" + className+"' ; ";
             DataTable dt = db.extractData(query);
+            MessageBox.Show(dt.Rows.Count.ToString());
             return dt;
         }
         public  void addPerson(string type,int id,string fName,string lName,string phoneNo,int age,string gender)
@@ -54,3 +59,10 @@ namespace Gym_System.GYM_classes
         }
     }
 }
+//            query = "SELECT * FROM gym_data_base.person , gym_data_base.class " +
+//"where gym_data_base.person.id = gym_data_base.class.personId;";
+
+/*SELECT* FROM gym_data_base.person  , gym_data_base.class " +
+                "where gym_data_base.person.id = gym_data_base.class.personId and " +
+                "gym_data_base.person.type='" + "member" + "' and  " +
+                "gym_data_base.class.name='className' ; */

@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 using Gym_System.DataBase_Connection;
 using Gym_System.GYM_classes;
 using MySql.Data.MySqlClient;
+using System.Diagnostics;
 
 namespace Gym_System.Forms
 {
     public partial class EmployeeForm : Form
     {
+        //public static DataGridView dataGridView1;
+
+
         public EmployeeForm()
         {
             InitializeComponent();
@@ -30,14 +35,18 @@ namespace Gym_System.Forms
             DataBase db = new DataBase();
             DataBaseFunctions dbf = new DataBaseFunctions();
             dataGridView1.DataSource = dbf.viewMembersUnderCondition(" ");
+            dataGridView1.Visible = true;
         }
 
         private void viewMembersWithClass_Click(object sender, EventArgs e)
         {
             ClassesForm classesForm = new ClassesForm();
             classesForm.Show();
-            DataBase db = new DataBase();
-            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
