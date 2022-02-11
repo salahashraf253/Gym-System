@@ -41,7 +41,7 @@ namespace Gym_System.Forms
                 else break;
             }
             string className = dataGridView1.Rows[row].Cells[1].Value.ToString() ;
-            MessageBox.Show(className + " " + className.Length);
+            //MessageBox.Show(className + " " + className.Length);
             showDataGridView(className);
         }
         private void showDataGridView(string className)

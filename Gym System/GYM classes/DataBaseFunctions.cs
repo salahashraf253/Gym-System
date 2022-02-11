@@ -38,11 +38,12 @@ namespace Gym_System.GYM_classes
         public DataTable viewMembersWithSpecificClass(string className)
         {
             string type = "member";
-            query = "SELECT *  from gym_data_base.class,gym_data_base.person where gym_data_base.person.type='member'" +
+            query = "SELECT id,firstName, lastName , gender , age , weight , memberShip" +
+                "  from gym_data_base.class,gym_data_base.person where gym_data_base.person.type='member'" +
                 " and gym_data_base.person.id = gym_data_base.class.personID and   " +
              "gym_data_base.class.name='" + className+"' ; ";
             DataTable dt = db.extractData(query);
-            MessageBox.Show(dt.Rows.Count.ToString());
+            //MessageBox.Show(dt.Rows.Count.ToString());
             return dt;
         }
         public  void addPerson(string type,int id,string fName,string lName,string phoneNo,int age,string gender)
@@ -59,10 +60,3 @@ namespace Gym_System.GYM_classes
         }
     }
 }
-//            query = "SELECT * FROM gym_data_base.person , gym_data_base.class " +
-//"where gym_data_base.person.id = gym_data_base.class.personId;";
-
-/*SELECT* FROM gym_data_base.person  , gym_data_base.class " +
-                "where gym_data_base.person.id = gym_data_base.class.personId and " +
-                "gym_data_base.person.type='" + "member" + "' and  " +
-                "gym_data_base.class.name='className' ; */

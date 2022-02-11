@@ -19,14 +19,25 @@ namespace Gym_System.Forms
 
         private void addTrainerBtn_Click(object sender, EventArgs e)
         {
-            addTrainerForm addTrainerForm = new addTrainerForm();
-            addTrainerForm.Show();
+            addEditDeleteTrainerForm addEditDeleteTrainerForm = new addEditDeleteTrainerForm();
+            addEditDeleteTrainerForm.Show();
         }
 
         private void viewAllMemberInfo_Click(object sender, EventArgs e)
         {
             DataBaseFunctions dbf = new DataBaseFunctions();
             dataGridView1.DataSource = dbf.viewMembersUnderCondition(" ");
+        }
+
+        private void viewMembersWithSpecificClass_Click(object sender, EventArgs e)
+        {
+            Functions.viewMembersWithSpecificClass();
+        }
+
+        private void signOutButton_Click(object sender, EventArgs e)
+        {
+            Functions.viewLoginPage();
+            Close();
         }
     }
 }

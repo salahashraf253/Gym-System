@@ -57,12 +57,3 @@ namespace Gym_System.Forms
         }
     }
 }
-/*int id = Int32.Parse(idTxt.Text);
-string fName = fNameTxt.Text;
-string lName = sNameTxt.Text;
-string type = "trainer";
-int age = Int32.Parse(ageTxt.Text);
-string gender = genderTxt.Text;
-string phoneNo = phoneNoTxt.Text;
-DataBaseFunctions dataBaseFunction = new DataBaseFunctions();
-dataBaseFunction.addPerson(type, id, fName, lName, phoneNo, age, gender);*/

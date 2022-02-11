@@ -38,15 +38,21 @@ namespace Gym_System.Forms
             dataGridView1.Visible = true;
         }
 
-        private void viewMembersWithClass_Click(object sender, EventArgs e)
-        {
-            ClassesForm classesForm = new ClassesForm();
-            classesForm.Show();
-        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void viewMembersWithClass_Click_1(object sender, EventArgs e)
+        {
+            Functions.viewMembersWithSpecificClass();
+        }
+
+        private void signOutButton_Click(object sender, EventArgs e)
+        {
+            Functions.viewLoginPage();
+            Close();
         }
     }
 }

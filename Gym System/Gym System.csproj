@@ -70,6 +70,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase Connection\DataBase.cs" />
+    <Compile Include="Forms\addEditDeleteTrainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\addEditDeleteTrainerForm.Designer.cs">
+      <DependentUpon>addEditDeleteTrainerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\addTrainerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,7 @@
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
     <Compile Include="GYM classes\DataBaseFunctions.cs" />
+    <Compile Include="GYM classes\Functions.cs" />
     <Compile Include="GYM classes\Sessions.cs" />
     <Compile Include="Person Classes\membership.cs" />
     <Compile Include="Person Classes\user of sytem\Administrator.cs" />
@@ -117,6 +124,9 @@
     <Compile Include="Person Classes\Trainer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\addEditDeleteTrainerForm.resx">
+      <DependentUpon>addEditDeleteTrainerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\addTrainerForm.resx">
       <DependentUpon>addTrainerForm.cs</DependentUpon>
     </EmbeddedResource>
